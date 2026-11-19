@@ -1,0 +1,55 @@
+---
+- name: Install and harden nginx
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Check whether nginx configuration already exists
+      ansible.builtin.stat:
+        path: /etc/nginx/nginx.conf
+      register: nginx_config
+
+    - name: Install nginx
+      ansible.builtin.package:
+        name: nginx
+        state: present
+
+    - name: Explain check mode limitations for a new installation
+      ansible.builtin.debug:
+        msg: >-
+          nginx is not installed yet. Check mode cannot create its configuration
+          directory or service, so configuration and service tasks are skipped.
+      when: ansible_check_mode and not nginx_config.stat.exists
+
+    - name: Configure nginx security settings
+      ansible.builtin.copy:
+        dest: /etc/nginx/conf.d/security-headers.conf
+        owner: root
+        group: root
+        mode: "0644"
+        content: |
+          server_tokens off;
+          add_header X-Content-Type-Options "nosniff" always;
+          add_header X-Frame-Options "DENY" always;
+          add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+      notify:
+        - Validate nginx configuration
+        - Reload nginx
+      when: not ansible_check_mode or nginx_config.stat.exists
+
+    - name: Ensure nginx is running and enabled
+      ansible.builtin.service:
+        name: nginx
+        state: started
+        enabled: true
+      when: not ansible_check_mode or nginx_config.stat.exists
+
+  handlers:
+    - name: Validate nginx configuration
+      ansible.builtin.command: nginx -t
+      changed_when: false
+
+    - name: Reload nginx
+      ansible.builtin.service:
+        name: nginx
+        state: reloaded
