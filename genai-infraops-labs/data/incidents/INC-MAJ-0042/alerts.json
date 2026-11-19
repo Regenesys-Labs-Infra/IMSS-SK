@@ -1,0 +1,14 @@
+[
+  {
+    "time": "2026-11-05T18:10:00+05:30",
+    "alert": "HTTP5xxRate",
+    "instance": "nginx-edge-01",
+    "value": "41%"
+  },
+  {
+    "time": "2026-11-05T18:14:00+05:30",
+    "alert": "LoginSuccessRateLow",
+    "instance": "portal-api",
+    "value": "12%"
+  }
+]

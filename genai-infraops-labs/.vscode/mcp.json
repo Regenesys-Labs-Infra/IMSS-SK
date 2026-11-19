@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "itsm-mock": {
+      "type": "stdio",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": ["${workspaceFolder}/mcp/itsm_mock_server.py"]
+    }
+  }
+}

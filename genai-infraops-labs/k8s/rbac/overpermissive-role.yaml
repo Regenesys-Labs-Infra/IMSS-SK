@@ -1,0 +1,17 @@
+# Lab 5.2 - over-permissive Role generated "to make it work". Reduce to least privilege.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata: {name: desk-support, namespace: portal}
+rules:
+- apiGroups: ["*"]
+  resources: ["*"]
+  verbs: ["*"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata: {name: desk-support, namespace: portal}
+subjects:
+- kind: Group
+  name: servicedesk-l2
+  apiGroup: rbac.authorization.k8s.io
+roleRef: {kind: Role, name: desk-support, apiGroup: rbac.authorization.k8s.io}

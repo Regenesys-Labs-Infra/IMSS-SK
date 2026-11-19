@@ -1,0 +1,10 @@
+{
+  "chat.agent.enabled": true,
+  "chat.mcp.enabled": true,
+  "chat.tools.autoApprove": false,
+  "chat.tools.terminal.autoApprove": {},
+  "security.workspace.trust.enabled": true,
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+  "chat.promptFiles": true,
+  "files.exclude": { "**/.venv": true }
+}

@@ -52,7 +52,7 @@ locals {
       {
         protocol   = "tcp"
         port       = 443
-        cidr_block = "10.0.0.0/8"
+        cidr_block = var.allowed_https_cidr
       }
     ]
   }

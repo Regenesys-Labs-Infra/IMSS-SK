@@ -1,0 +1,5 @@
+2026-11-09T09:00:01+05:30 INFO nginx started
+2026-11-09T09:06:10+05:30 ERROR nginx upstream portal-api timed out -> 504
+2026-11-09T09:07:10+05:30 ERROR nginx upstream portal-api timed out -> 504
+2026-11-09T09:08:10+05:30 ERROR nginx upstream portal-api timed out -> 504
+2026-11-09T09:09:10+05:30 ERROR nginx upstream portal-api timed out -> 504

@@ -1,0 +1,74 @@
+# UC-09 / UC-11: Customer Portal with THREE planted faults (find them; do not read the answer key first)
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: portal
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: portal-web
+  namespace: portal
+  labels: {app: portal-web}
+spec:
+  replicas: 2
+  selector:
+    matchLabels: {app: portal-web}
+  template:
+    metadata:
+      labels: {app: portal-web}
+    spec:
+      containers:
+      - name: web
+        image: nginx:1.27-alpine
+        ports: [{containerPort: 80}]
+        readinessProbe: {httpGet: {path: /, port: 80}, initialDelaySeconds: 3}
+        resources:
+          requests: {cpu: 50m, memory: 64Mi}
+          limits: {cpu: 200m, memory: 128Mi}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: portal-web
+  namespace: portal
+spec:
+  selector: {app: portal-web-v2}
+  ports: [{port: 80, targetPort: 80}]
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: portal-api
+  namespace: portal
+  labels: {app: portal-api}
+spec:
+  replicas: 1
+  selector:
+    matchLabels: {app: portal-api}
+  template:
+    metadata:
+      labels: {app: portal-api}
+    spec:
+      containers:
+      - name: api
+        image: nginx:1.27-alpine-hotfx
+        ports: [{containerPort: 80}]
+        resources:
+          requests: {cpu: 50m, memory: 64Mi}
+          limits: {cpu: 200m, memory: 128Mi}
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: portal
+  namespace: portal
+spec:
+  rules:
+  - host: portal.exmaple-corp.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service: {name: portal-web, port: {number: 80}}

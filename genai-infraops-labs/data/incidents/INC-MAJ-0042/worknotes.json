@@ -1,0 +1,55 @@
+{
+  "number": "INC-MAJ-0042",
+  "priority": "P1",
+  "business_service": "Customer Portal",
+  "opened_at": "2026-11-05T18:12:00+05:30",
+  "responded_at": "2026-11-05T18:21:00+05:30",
+  "resolved_at": "2026-11-05T20:31:00+05:30",
+  "worknotes": [
+    {
+      "time": "2026-11-05T18:05:00+05:30",
+      "author": "release-bot",
+      "note": "Release 2026.11.05 deployed portal-api 2.4.0 (DB schema migration included)."
+    },
+    {
+      "time": "2026-11-05T18:10:00+05:30",
+      "author": "monitoring",
+      "note": "HTTP5xxRate critical on nginx-edge-01, 41% errors."
+    },
+    {
+      "time": "2026-11-05T18:12:00+05:30",
+      "author": "SD-L1",
+      "note": "Multiple customer calls: login errors. P1 raised."
+    },
+    {
+      "time": "2026-11-05T18:21:00+05:30",
+      "author": "MIM",
+      "note": "Bridge opened. App, DB, Platform teams joined."
+    },
+    {
+      "time": "2026-11-05T18:48:00+05:30",
+      "author": "APP-PORTAL-L2",
+      "note": "portal-api logs: column 'last_login_ts' does not exist. Migration step 3 failed silently."
+    },
+    {
+      "time": "2026-11-05T19:10:00+05:30",
+      "author": "MIM",
+      "note": "Decision: roll back portal-api to 2.3.7. Change ECHG0003049 emergency approved."
+    },
+    {
+      "time": "2026-11-05T19:40:00+05:30",
+      "author": "K8S-PLATFORM-L3",
+      "note": "Rollback blocked: old image deleted from registry by retention policy. Rebuilding 2.3.7."
+    },
+    {
+      "time": "2026-11-05T20:18:00+05:30",
+      "author": "K8S-PLATFORM-L3",
+      "note": "2.3.7 rebuilt and deployed. Error rate falling."
+    },
+    {
+      "time": "2026-11-05T20:31:00+05:30",
+      "author": "MIM",
+      "note": "Service restored, error rate < 0.5% for 10 min. Monitoring for 1h."
+    }
+  ]
+}

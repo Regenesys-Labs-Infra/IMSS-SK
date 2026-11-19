@@ -1,0 +1,12 @@
+ci_name,ci_class,business_service,support_group,environment,ip_address
+srv-fin-app-02,Linux server,Finance Reporting,LINUX-L2,Prod,10.20.14.22
+srv-fin-db-01,Linux server,Finance Reporting,LINUX-L2,Prod,10.20.14.31
+portal-web,K8s deployment,Customer Portal,APP-PORTAL-L2,Prod,n/a
+portal-api,K8s deployment,Customer Portal,APP-PORTAL-L2,Prod,n/a
+k8s-prod-cluster-01,Kubernetes cluster,Shared Platform,K8S-PLATFORM-L3,Prod,10.30.0.10
+vpn-gw-pune-01,VPN gateway,Remote Access,NETWORK-L2,Prod,10.10.1.5
+dc-ad-01,Domain controller,Identity,WINTEL-L2,Prod,10.10.2.11
+exch-mbx-01,Exchange server,Email,WINTEL-L2,Prod,10.10.2.21
+prn-pune-3f-01,Printer,Office Print,EUC-L2,Prod,10.40.3.51
+fs-pune-01,File server,File Shares,WINTEL-L2,Prod,10.10.2.41
+nginx-edge-01,Linux server,Customer Portal,LINUX-L2,Prod,10.30.1.15

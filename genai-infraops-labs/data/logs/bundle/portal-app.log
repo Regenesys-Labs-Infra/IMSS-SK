@@ -1,0 +1,16 @@
+2026-11-09T09:00:00+05:30 INFO portal-api request /login 200 120ms
+2026-11-09T09:00:10+05:30 INFO portal-api request /login 200 120ms
+2026-11-09T09:00:20+05:30 INFO portal-api request /login 200 120ms
+2026-11-09T09:00:30+05:30 INFO portal-api request /login 200 120ms
+2026-11-09T09:00:40+05:30 INFO portal-api request /login 200 120ms
+2026-11-09T09:00:45+05:30 INFO portal-api deploy 2026.11.09 started: report export now opens one DB connection per row batch
+2026-11-09T09:00:50+05:30 INFO portal-api request /login 200 120ms
+2026-11-09T09:01:08+05:30 INFO portal-api request /reports 200 800ms
+2026-11-09T09:02:08+05:30 INFO portal-api request /reports 200 1200ms
+2026-11-09T09:03:08+05:30 INFO portal-api request /reports 200 1600ms
+2026-11-09T09:04:08+05:30 INFO portal-api request /reports 200 2000ms
+2026-11-09T09:05:08+05:30 INFO portal-api request /reports 200 2400ms
+2026-11-09T09:06:08+05:30 ERROR portal-api /login failed: timeout acquiring DB connection after 5000ms
+2026-11-09T09:07:08+05:30 ERROR portal-api /login failed: timeout acquiring DB connection after 5000ms
+2026-11-09T09:08:08+05:30 ERROR portal-api /login failed: timeout acquiring DB connection after 5000ms
+2026-11-09T09:09:08+05:30 ERROR portal-api /login failed: timeout acquiring DB connection after 5000ms

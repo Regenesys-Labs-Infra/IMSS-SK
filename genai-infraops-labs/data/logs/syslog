@@ -1,0 +1,60 @@
+Nov 09 08:00:00 srv-fin-app-02 systemd[1]: Started Session of user ravi.
+Nov 09 08:01:07 srv-fin-app-02 finapp[1402]: WARN write to /var/log/finapp/report.log failed: No space left on device
+Nov 09 08:02:14 srv-fin-app-02 finapp[1402]: WARN write to /var/log/finapp/report.log failed: No space left on device
+Nov 09 08:03:21 srv-fin-app-02 kernel: [12345.678] EXT4-fs warning (device sdb1): ext4_dx_add_entry: Directory index full!
+Nov 09 08:04:28 srv-fin-app-02 kernel: [12345.678] EXT4-fs warning (device sdb1): ext4_dx_add_entry: Directory index full!
+Nov 09 08:05:35 srv-fin-app-02 kernel: [12345.678] EXT4-fs warning (device sdb1): ext4_dx_add_entry: Directory index full!
+Nov 09 08:06:42 srv-fin-app-02 systemd[1]: Started Session of user ravi.
+Nov 09 08:07:49 srv-fin-app-02 CRON[2211]: (root) CMD (/usr/local/bin/backup.sh)
+Nov 09 08:08:56 srv-fin-app-02 finapp[1402]: INFO report generated in 4.2s
+Nov 09 08:09:03 srv-fin-app-02 kernel: [12345.678] EXT4-fs warning (device sdb1): ext4_dx_add_entry: Directory index full!
+Nov 09 08:10:10 srv-fin-app-02 kernel: [12345.678] EXT4-fs warning (device sdb1): ext4_dx_add_entry: Directory index full!
+Nov 09 08:11:17 srv-fin-app-02 CRON[2211]: (root) CMD (/usr/local/bin/backup.sh)
+Nov 09 08:12:24 srv-fin-app-02 finapp[1402]: INFO report generated in 4.2s
+Nov 09 08:13:31 srv-fin-app-02 finapp[1402]: WARN write to /var/log/finapp/report.log failed: No space left on device
+Nov 09 08:14:38 srv-fin-app-02 systemd[1]: Started Session of user ravi.
+Nov 09 08:15:45 srv-fin-app-02 finapp[1402]: WARN write to /var/log/finapp/report.log failed: No space left on device
+Nov 09 08:16:52 srv-fin-app-02 systemd[1]: Started Session of user ravi.
+Nov 09 08:17:59 srv-fin-app-02 kernel: [12345.678] EXT4-fs warning (device sdb1): ext4_dx_add_entry: Directory index full!
+Nov 09 08:18:06 srv-fin-app-02 systemd[1]: Started Session of user ravi.
+Nov 09 08:19:13 srv-fin-app-02 kernel: [12345.678] EXT4-fs warning (device sdb1): ext4_dx_add_entry: Directory index full!
+Nov 09 08:20:20 srv-fin-app-02 finapp[1402]: INFO report generated in 4.2s
+Nov 09 08:21:27 srv-fin-app-02 finapp[1402]: WARN write to /var/log/finapp/report.log failed: No space left on device
+Nov 09 08:22:34 srv-fin-app-02 systemd[1]: Started Session of user ravi.
+Nov 09 08:23:41 srv-fin-app-02 finapp[1402]: INFO report generated in 4.2s
+Nov 09 08:24:48 srv-fin-app-02 finapp[1402]: WARN write to /var/log/finapp/report.log failed: No space left on device
+Nov 09 08:25:55 srv-fin-app-02 finapp[1402]: WARN write to /var/log/finapp/report.log failed: No space left on device
+Nov 09 08:26:02 srv-fin-app-02 kernel: [12345.678] EXT4-fs warning (device sdb1): ext4_dx_add_entry: Directory index full!
+Nov 09 08:27:09 srv-fin-app-02 finapp[1402]: WARN write to /var/log/finapp/report.log failed: No space left on device
+Nov 09 08:28:16 srv-fin-app-02 finapp[1402]: WARN write to /var/log/finapp/report.log failed: No space left on device
+Nov 09 08:29:23 srv-fin-app-02 systemd[1]: Started Session of user ravi.
+Nov 09 08:30:30 srv-fin-app-02 finapp[1402]: WARN write to /var/log/finapp/report.log failed: No space left on device
+Nov 09 08:31:37 srv-fin-app-02 finapp[1402]: INFO report generated in 4.2s
+Nov 09 08:32:44 srv-fin-app-02 finapp[1402]: INFO report generated in 4.2s
+Nov 09 08:33:51 srv-fin-app-02 finapp[1402]: INFO report generated in 4.2s
+Nov 09 08:34:58 srv-fin-app-02 systemd[1]: Started Session of user ravi.
+Nov 09 08:35:05 srv-fin-app-02 kernel: [12345.678] EXT4-fs warning (device sdb1): ext4_dx_add_entry: Directory index full!
+Nov 09 08:36:12 srv-fin-app-02 finapp[1402]: INFO report generated in 4.2s
+Nov 09 08:37:19 srv-fin-app-02 finapp[1402]: WARN write to /var/log/finapp/report.log failed: No space left on device
+Nov 09 08:38:26 srv-fin-app-02 systemd[1]: Started Session of user ravi.
+Nov 09 08:39:33 srv-fin-app-02 finapp[1402]: WARN write to /var/log/finapp/report.log failed: No space left on device
+Nov 09 08:40:40 srv-fin-app-02 finapp[1402]: INFO report generated in 4.2s
+Nov 09 08:41:47 srv-fin-app-02 CRON[2211]: (root) CMD (/usr/local/bin/backup.sh)
+Nov 09 08:42:54 srv-fin-app-02 CRON[2211]: (root) CMD (/usr/local/bin/backup.sh)
+Nov 09 08:43:01 srv-fin-app-02 CRON[2211]: (root) CMD (/usr/local/bin/backup.sh)
+Nov 09 08:44:08 srv-fin-app-02 finapp[1402]: WARN write to /var/log/finapp/report.log failed: No space left on device
+Nov 09 08:45:15 srv-fin-app-02 kernel: [12345.678] EXT4-fs warning (device sdb1): ext4_dx_add_entry: Directory index full!
+Nov 09 08:46:22 srv-fin-app-02 systemd[1]: Started Session of user ravi.
+Nov 09 08:47:29 srv-fin-app-02 systemd[1]: Started Session of user ravi.
+Nov 09 08:48:36 srv-fin-app-02 finapp[1402]: INFO report generated in 4.2s
+Nov 09 08:49:43 srv-fin-app-02 CRON[2211]: (root) CMD (/usr/local/bin/backup.sh)
+Nov 09 08:50:50 srv-fin-app-02 finapp[1402]: WARN write to /var/log/finapp/report.log failed: No space left on device
+Nov 09 08:51:57 srv-fin-app-02 finapp[1402]: INFO report generated in 4.2s
+Nov 09 08:52:04 srv-fin-app-02 kernel: [12345.678] EXT4-fs warning (device sdb1): ext4_dx_add_entry: Directory index full!
+Nov 09 08:53:11 srv-fin-app-02 finapp[1402]: INFO report generated in 4.2s
+Nov 09 08:54:18 srv-fin-app-02 finapp[1402]: WARN write to /var/log/finapp/report.log failed: No space left on device
+Nov 09 08:55:25 srv-fin-app-02 CRON[2211]: (root) CMD (/usr/local/bin/backup.sh)
+Nov 09 08:56:32 srv-fin-app-02 kernel: [12345.678] EXT4-fs warning (device sdb1): ext4_dx_add_entry: Directory index full!
+Nov 09 08:57:39 srv-fin-app-02 kernel: [12345.678] EXT4-fs warning (device sdb1): ext4_dx_add_entry: Directory index full!
+Nov 09 08:58:46 srv-fin-app-02 finapp[1402]: WARN write to /var/log/finapp/report.log failed: No space left on device
+Nov 09 08:59:53 srv-fin-app-02 CRON[2211]: (root) CMD (/usr/local/bin/backup.sh)

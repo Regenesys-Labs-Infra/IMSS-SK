@@ -1,0 +1,22 @@
+{
+  "timezone": "Asia/Kolkata",
+  "targets_minutes": {
+    "P1": {
+      "respond": 15,
+      "resolve": 240
+    },
+    "P2": {
+      "respond": 30,
+      "resolve": 480
+    },
+    "P3": {
+      "respond": 120,
+      "resolve": 1440
+    },
+    "P4": {
+      "respond": 480,
+      "resolve": 4320
+    }
+  },
+  "clock": "24x7 for P1/P2; business hours treated as 24x7 in this lab for simplicity"
+}

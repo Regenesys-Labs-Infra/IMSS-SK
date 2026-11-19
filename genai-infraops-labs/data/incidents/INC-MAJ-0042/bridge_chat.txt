@@ -1,0 +1,12 @@
+[18:21] MIM (Asha): Bridge open for INC-MAJ-0042. Customer portal login failures. Who has eyes on portal-api?
+[18:23] App (Rohit): Seeing 500s on /auth/login since ~18:07. Release went out 18:05.
+[18:25] DB (Farhan): DB healthy, CPU 30%. No locks.
+[18:31] MIM (Asha): Next stakeholder update due 18:51. Any customer-facing workaround?
+[18:35] App (Rohit): No workaround, all logins hit the new code path.
+[18:48] App (Rohit): Found it - column last_login_ts missing. Migration step 3 failed but pipeline marked success.
+[18:52] MIM (Asha): Options: forward-fix migration or rollback?
+[18:58] DB (Farhan): Forward fix needs schema change under load, I prefer rollback.
+[19:10] MIM (Asha): Decision rollback to 2.3.7. Emergency change approved by duty manager.
+[19:40] Platform (Leena): Image 2.3.7 not in registry, retention policy keeps last 5 tags only. Rebuilding from git tag.
+[20:18] Platform (Leena): 2.3.7 live, error rate dropping.
+[20:31] MIM (Asha): Restored. Keep bridge 1h. PIR to be scheduled.

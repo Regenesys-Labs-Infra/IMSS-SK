@@ -1,0 +1,145 @@
+{
+  "count": 20,
+  "alerts": [
+    {
+      "id": "CAPALR-000",
+      "fired_at": "2026-11-12T14:03:00+05:30",
+      "alertname": "HTTP5xxRate",
+      "instance": "nginx-edge-01",
+      "severity": "critical"
+    },
+    {
+      "id": "CAPALR-001",
+      "fired_at": "2026-11-12T14:03:13+05:30",
+      "alertname": "HTTP5xxRate",
+      "instance": "nginx-edge-01",
+      "severity": "critical"
+    },
+    {
+      "id": "CAPALR-002",
+      "fired_at": "2026-11-12T14:03:26+05:30",
+      "alertname": "HTTP5xxRate",
+      "instance": "nginx-edge-01",
+      "severity": "critical"
+    },
+    {
+      "id": "CAPALR-003",
+      "fired_at": "2026-11-12T14:04:39+05:30",
+      "alertname": "HTTP5xxRate",
+      "instance": "nginx-edge-01",
+      "severity": "critical"
+    },
+    {
+      "id": "CAPALR-004",
+      "fired_at": "2026-11-12T14:04:52+05:30",
+      "alertname": "HTTP5xxRate",
+      "instance": "nginx-edge-01",
+      "severity": "critical"
+    },
+    {
+      "id": "CAPALR-005",
+      "fired_at": "2026-11-12T14:04:05+05:30",
+      "alertname": "HTTP5xxRate",
+      "instance": "nginx-edge-01",
+      "severity": "critical"
+    },
+    {
+      "id": "CAPALR-006",
+      "fired_at": "2026-11-12T14:05:18+05:30",
+      "alertname": "PodNotReady",
+      "instance": "portal-web",
+      "severity": "critical"
+    },
+    {
+      "id": "CAPALR-007",
+      "fired_at": "2026-11-12T14:05:31+05:30",
+      "alertname": "PodNotReady",
+      "instance": "portal-web",
+      "severity": "critical"
+    },
+    {
+      "id": "CAPALR-008",
+      "fired_at": "2026-11-12T14:05:44+05:30",
+      "alertname": "PodNotReady",
+      "instance": "portal-web",
+      "severity": "critical"
+    },
+    {
+      "id": "CAPALR-009",
+      "fired_at": "2026-11-12T14:06:57+05:30",
+      "alertname": "PodNotReady",
+      "instance": "portal-web",
+      "severity": "critical"
+    },
+    {
+      "id": "CAPALR-010",
+      "fired_at": "2026-11-12T14:06:10+05:30",
+      "alertname": "PodNotReady",
+      "instance": "portal-web",
+      "severity": "critical"
+    },
+    {
+      "id": "CAPALR-011",
+      "fired_at": "2026-11-12T14:06:23+05:30",
+      "alertname": "KubePodImagePullBackOff",
+      "instance": "portal-api",
+      "severity": "critical"
+    },
+    {
+      "id": "CAPALR-012",
+      "fired_at": "2026-11-12T14:07:36+05:30",
+      "alertname": "KubePodImagePullBackOff",
+      "instance": "portal-api",
+      "severity": "critical"
+    },
+    {
+      "id": "CAPALR-013",
+      "fired_at": "2026-11-12T14:07:49+05:30",
+      "alertname": "KubePodImagePullBackOff",
+      "instance": "portal-api",
+      "severity": "critical"
+    },
+    {
+      "id": "CAPALR-014",
+      "fired_at": "2026-11-12T14:07:02+05:30",
+      "alertname": "KubePodImagePullBackOff",
+      "instance": "portal-api",
+      "severity": "critical"
+    },
+    {
+      "id": "CAPALR-015",
+      "fired_at": "2026-11-12T14:08:15+05:30",
+      "alertname": "LoginSuccessRateLow",
+      "instance": "portal-api",
+      "severity": "critical"
+    },
+    {
+      "id": "CAPALR-016",
+      "fired_at": "2026-11-12T14:08:28+05:30",
+      "alertname": "LoginSuccessRateLow",
+      "instance": "portal-api",
+      "severity": "critical"
+    },
+    {
+      "id": "CAPALR-017",
+      "fired_at": "2026-11-12T14:08:41+05:30",
+      "alertname": "LoginSuccessRateLow",
+      "instance": "portal-api",
+      "severity": "critical"
+    },
+    {
+      "id": "CAPALR-018",
+      "fired_at": "2026-11-12T14:09:54+05:30",
+      "alertname": "HighCPU",
+      "instance": "srv-fin-app-02",
+      "severity": "critical"
+    },
+    {
+      "id": "CAPALR-019",
+      "fired_at": "2026-11-12T14:09:07+05:30",
+      "alertname": "HighCPU",
+      "instance": "srv-fin-app-02",
+      "severity": "critical"
+    }
+  ]
+}

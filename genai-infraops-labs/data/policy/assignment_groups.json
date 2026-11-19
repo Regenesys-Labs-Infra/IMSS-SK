@@ -1,0 +1,36 @@
+{
+  "groups": [
+    {
+      "id": "SD-L1",
+      "name": "Service Desk L1 (first line)"
+    },
+    {
+      "id": "WINTEL-L2",
+      "name": "Windows / AD / Exchange L2"
+    },
+    {
+      "id": "NETWORK-L2",
+      "name": "Network and VPN L2"
+    },
+    {
+      "id": "LINUX-L2",
+      "name": "Linux / Unix server L2"
+    },
+    {
+      "id": "APP-PORTAL-L2",
+      "name": "Customer Portal application support"
+    },
+    {
+      "id": "K8S-PLATFORM-L3",
+      "name": "Kubernetes platform engineering"
+    },
+    {
+      "id": "SECOPS",
+      "name": "Security Operations"
+    },
+    {
+      "id": "EUC-L2",
+      "name": "End-user computing (laptops, printers)"
+    }
+  ]
+}

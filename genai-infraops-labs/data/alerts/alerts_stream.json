@@ -1,0 +1,429 @@
+{
+  "window": "2026-11-09 08:52-09:02 IST",
+  "count": 47,
+  "alerts": [
+    {
+      "id": "ALR-9011",
+      "fired_at": "2026-11-09T08:52:09+05:30",
+      "alertname": "HighCPU",
+      "instance": "srv-fin-app-02",
+      "severity": "critical",
+      "value": "4.2s",
+      "summary": "HighCPU on srv-fin-app-02"
+    },
+    {
+      "id": "ALR-9027",
+      "fired_at": "2026-11-09T08:52:34+05:30",
+      "alertname": "SlowQueries",
+      "instance": "srv-fin-db-01",
+      "severity": "critical",
+      "value": "down",
+      "summary": "SlowQueries on srv-fin-db-01"
+    },
+    {
+      "id": "ALR-9026",
+      "fired_at": "2026-11-09T08:52:40+05:30",
+      "alertname": "SlowQueries",
+      "instance": "srv-fin-db-01",
+      "severity": "critical",
+      "value": "12%",
+      "summary": "SlowQueries on srv-fin-db-01"
+    },
+    {
+      "id": "ALR-9045",
+      "fired_at": "2026-11-09T08:52:46+05:30",
+      "alertname": "TargetDown",
+      "instance": "portal-web",
+      "severity": "warning",
+      "value": "4.2s",
+      "summary": "TargetDown on portal-web"
+    },
+    {
+      "id": "ALR-9002",
+      "fired_at": "2026-11-09T08:52:47+05:30",
+      "alertname": "HighCPU",
+      "instance": "srv-fin-app-02",
+      "severity": "critical",
+      "value": "97%",
+      "summary": "HighCPU on srv-fin-app-02"
+    },
+    {
+      "id": "ALR-9034",
+      "fired_at": "2026-11-09T08:53:17+05:30",
+      "alertname": "HTTP5xxRate",
+      "instance": "nginx-edge-01",
+      "severity": "warning",
+      "value": "96%",
+      "summary": "HTTP5xxRate on nginx-edge-01"
+    },
+    {
+      "id": "ALR-9007",
+      "fired_at": "2026-11-09T08:53:20+05:30",
+      "alertname": "HighCPU",
+      "instance": "srv-fin-app-02",
+      "severity": "critical",
+      "value": "0/2 ready",
+      "summary": "HighCPU on srv-fin-app-02"
+    },
+    {
+      "id": "ALR-9017",
+      "fired_at": "2026-11-09T08:53:49+05:30",
+      "alertname": "DiskSpaceLow",
+      "instance": "srv-fin-app-02",
+      "severity": "warning",
+      "value": "12%",
+      "summary": "DiskSpaceLow on srv-fin-app-02"
+    },
+    {
+      "id": "ALR-9028",
+      "fired_at": "2026-11-09T08:54:14+05:30",
+      "alertname": "SlowQueries",
+      "instance": "srv-fin-db-01",
+      "severity": "warning",
+      "value": "4.2s",
+      "summary": "SlowQueries on srv-fin-db-01"
+    },
+    {
+      "id": "ALR-9025",
+      "fired_at": "2026-11-09T08:54:20+05:30",
+      "alertname": "SlowQueries",
+      "instance": "srv-fin-db-01",
+      "severity": "warning",
+      "value": "down",
+      "summary": "SlowQueries on srv-fin-db-01"
+    },
+    {
+      "id": "ALR-9009",
+      "fired_at": "2026-11-09T08:54:26+05:30",
+      "alertname": "HighCPU",
+      "instance": "srv-fin-app-02",
+      "severity": "warning",
+      "value": "12%",
+      "summary": "HighCPU on srv-fin-app-02"
+    },
+    {
+      "id": "ALR-9001",
+      "fired_at": "2026-11-09T08:54:50+05:30",
+      "alertname": "HighCPU",
+      "instance": "srv-fin-app-02",
+      "severity": "critical",
+      "value": "97%",
+      "summary": "HighCPU on srv-fin-app-02"
+    },
+    {
+      "id": "ALR-9006",
+      "fired_at": "2026-11-09T08:55:04+05:30",
+      "alertname": "HighCPU",
+      "instance": "srv-fin-app-02",
+      "severity": "warning",
+      "value": "96%",
+      "summary": "HighCPU on srv-fin-app-02"
+    },
+    {
+      "id": "ALR-9024",
+      "fired_at": "2026-11-09T08:55:14+05:30",
+      "alertname": "SlowQueries",
+      "instance": "srv-fin-db-01",
+      "severity": "critical",
+      "value": "down",
+      "summary": "SlowQueries on srv-fin-db-01"
+    },
+    {
+      "id": "ALR-9016",
+      "fired_at": "2026-11-09T08:55:23+05:30",
+      "alertname": "DiskSpaceLow",
+      "instance": "srv-fin-app-02",
+      "severity": "critical",
+      "value": "12%",
+      "summary": "DiskSpaceLow on srv-fin-app-02"
+    },
+    {
+      "id": "ALR-9030",
+      "fired_at": "2026-11-09T08:55:25+05:30",
+      "alertname": "SlowQueries",
+      "instance": "srv-fin-db-01",
+      "severity": "warning",
+      "value": "0/2 ready",
+      "summary": "SlowQueries on srv-fin-db-01"
+    },
+    {
+      "id": "ALR-9042",
+      "fired_at": "2026-11-09T08:55:46+05:30",
+      "alertname": "PodNotReady",
+      "instance": "portal-api",
+      "severity": "warning",
+      "value": "down",
+      "summary": "PodNotReady on portal-api"
+    },
+    {
+      "id": "ALR-9040",
+      "fired_at": "2026-11-09T08:55:59+05:30",
+      "alertname": "PodNotReady",
+      "instance": "portal-api",
+      "severity": "critical",
+      "value": "97%",
+      "summary": "PodNotReady on portal-api"
+    },
+    {
+      "id": "ALR-9047",
+      "fired_at": "2026-11-09T08:56:00+05:30",
+      "alertname": "TargetDown",
+      "instance": "portal-web",
+      "severity": "warning",
+      "value": "12%",
+      "summary": "TargetDown on portal-web"
+    },
+    {
+      "id": "ALR-9008",
+      "fired_at": "2026-11-09T08:56:06+05:30",
+      "alertname": "HighCPU",
+      "instance": "srv-fin-app-02",
+      "severity": "critical",
+      "value": "0/2 ready",
+      "summary": "HighCPU on srv-fin-app-02"
+    },
+    {
+      "id": "ALR-9015",
+      "fired_at": "2026-11-09T08:56:16+05:30",
+      "alertname": "DiskSpaceLow",
+      "instance": "srv-fin-app-02",
+      "severity": "critical",
+      "value": "4.2s",
+      "summary": "DiskSpaceLow on srv-fin-app-02"
+    },
+    {
+      "id": "ALR-9010",
+      "fired_at": "2026-11-09T08:56:20+05:30",
+      "alertname": "HighCPU",
+      "instance": "srv-fin-app-02",
+      "severity": "critical",
+      "value": "4.2s",
+      "summary": "HighCPU on srv-fin-app-02"
+    },
+    {
+      "id": "ALR-9032",
+      "fired_at": "2026-11-09T08:56:23+05:30",
+      "alertname": "HTTP5xxRate",
+      "instance": "nginx-edge-01",
+      "severity": "critical",
+      "value": "4.2s",
+      "summary": "HTTP5xxRate on nginx-edge-01"
+    },
+    {
+      "id": "ALR-9003",
+      "fired_at": "2026-11-09T08:57:00+05:30",
+      "alertname": "HighCPU",
+      "instance": "srv-fin-app-02",
+      "severity": "critical",
+      "value": "4.2s",
+      "summary": "HighCPU on srv-fin-app-02"
+    },
+    {
+      "id": "ALR-9019",
+      "fired_at": "2026-11-09T08:57:02+05:30",
+      "alertname": "HighLoad",
+      "instance": "srv-fin-app-02",
+      "severity": "critical",
+      "value": "97%",
+      "summary": "HighLoad on srv-fin-app-02"
+    },
+    {
+      "id": "ALR-9014",
+      "fired_at": "2026-11-09T08:57:06+05:30",
+      "alertname": "DiskSpaceLow",
+      "instance": "srv-fin-app-02",
+      "severity": "critical",
+      "value": "down",
+      "summary": "DiskSpaceLow on srv-fin-app-02"
+    },
+    {
+      "id": "ALR-9029",
+      "fired_at": "2026-11-09T08:57:34+05:30",
+      "alertname": "SlowQueries",
+      "instance": "srv-fin-db-01",
+      "severity": "critical",
+      "value": "96%",
+      "summary": "SlowQueries on srv-fin-db-01"
+    },
+    {
+      "id": "ALR-9033",
+      "fired_at": "2026-11-09T08:57:46+05:30",
+      "alertname": "HTTP5xxRate",
+      "instance": "nginx-edge-01",
+      "severity": "warning",
+      "value": "12%",
+      "summary": "HTTP5xxRate on nginx-edge-01"
+    },
+    {
+      "id": "ALR-9023",
+      "fired_at": "2026-11-09T08:58:00+05:30",
+      "alertname": "HighLoad",
+      "instance": "srv-fin-app-02",
+      "severity": "warning",
+      "value": "down",
+      "summary": "HighLoad on srv-fin-app-02"
+    },
+    {
+      "id": "ALR-9031",
+      "fired_at": "2026-11-09T08:58:14+05:30",
+      "alertname": "SlowQueries",
+      "instance": "srv-fin-db-01",
+      "severity": "critical",
+      "value": "96%",
+      "summary": "SlowQueries on srv-fin-db-01"
+    },
+    {
+      "id": "ALR-9038",
+      "fired_at": "2026-11-09T08:58:17+05:30",
+      "alertname": "HTTP5xxRate",
+      "instance": "nginx-edge-01",
+      "severity": "critical",
+      "value": "0/2 ready",
+      "summary": "HTTP5xxRate on nginx-edge-01"
+    },
+    {
+      "id": "ALR-9039",
+      "fired_at": "2026-11-09T08:58:30+05:30",
+      "alertname": "PodNotReady",
+      "instance": "portal-api",
+      "severity": "critical",
+      "value": "97%",
+      "summary": "PodNotReady on portal-api"
+    },
+    {
+      "id": "ALR-9036",
+      "fired_at": "2026-11-09T08:58:44+05:30",
+      "alertname": "HTTP5xxRate",
+      "instance": "nginx-edge-01",
+      "severity": "warning",
+      "value": "4.2s",
+      "summary": "HTTP5xxRate on nginx-edge-01"
+    },
+    {
+      "id": "ALR-9020",
+      "fired_at": "2026-11-09T08:58:45+05:30",
+      "alertname": "HighLoad",
+      "instance": "srv-fin-app-02",
+      "severity": "critical",
+      "value": "97%",
+      "summary": "HighLoad on srv-fin-app-02"
+    },
+    {
+      "id": "ALR-9035",
+      "fired_at": "2026-11-09T08:58:46+05:30",
+      "alertname": "HTTP5xxRate",
+      "instance": "nginx-edge-01",
+      "severity": "critical",
+      "value": "97%",
+      "summary": "HTTP5xxRate on nginx-edge-01"
+    },
+    {
+      "id": "ALR-9044",
+      "fired_at": "2026-11-09T08:58:58+05:30",
+      "alertname": "TargetDown",
+      "instance": "portal-web",
+      "severity": "warning",
+      "value": "96%",
+      "summary": "TargetDown on portal-web"
+    },
+    {
+      "id": "ALR-9004",
+      "fired_at": "2026-11-09T08:59:21+05:30",
+      "alertname": "HighCPU",
+      "instance": "srv-fin-app-02",
+      "severity": "warning",
+      "value": "96%",
+      "summary": "HighCPU on srv-fin-app-02"
+    },
+    {
+      "id": "ALR-9013",
+      "fired_at": "2026-11-09T08:59:32+05:30",
+      "alertname": "DiskSpaceLow",
+      "instance": "srv-fin-app-02",
+      "severity": "critical",
+      "value": "0/2 ready",
+      "summary": "DiskSpaceLow on srv-fin-app-02"
+    },
+    {
+      "id": "ALR-9043",
+      "fired_at": "2026-11-09T08:59:55+05:30",
+      "alertname": "PodNotReady",
+      "instance": "portal-api",
+      "severity": "critical",
+      "value": "down",
+      "summary": "PodNotReady on portal-api"
+    },
+    {
+      "id": "ALR-9046",
+      "fired_at": "2026-11-09T09:00:24+05:30",
+      "alertname": "TargetDown",
+      "instance": "portal-web",
+      "severity": "warning",
+      "value": "97%",
+      "summary": "TargetDown on portal-web"
+    },
+    {
+      "id": "ALR-9022",
+      "fired_at": "2026-11-09T09:00:28+05:30",
+      "alertname": "HighLoad",
+      "instance": "srv-fin-app-02",
+      "severity": "critical",
+      "value": "96%",
+      "summary": "HighLoad on srv-fin-app-02"
+    },
+    {
+      "id": "ALR-9005",
+      "fired_at": "2026-11-09T09:01:03+05:30",
+      "alertname": "HighCPU",
+      "instance": "srv-fin-app-02",
+      "severity": "critical",
+      "value": "0/2 ready",
+      "summary": "HighCPU on srv-fin-app-02"
+    },
+    {
+      "id": "ALR-9037",
+      "fired_at": "2026-11-09T09:01:09+05:30",
+      "alertname": "HTTP5xxRate",
+      "instance": "nginx-edge-01",
+      "severity": "warning",
+      "value": "12%",
+      "summary": "HTTP5xxRate on nginx-edge-01"
+    },
+    {
+      "id": "ALR-9012",
+      "fired_at": "2026-11-09T09:01:19+05:30",
+      "alertname": "HighCPU",
+      "instance": "srv-fin-app-02",
+      "severity": "warning",
+      "value": "97%",
+      "summary": "HighCPU on srv-fin-app-02"
+    },
+    {
+      "id": "ALR-9041",
+      "fired_at": "2026-11-09T09:01:34+05:30",
+      "alertname": "PodNotReady",
+      "instance": "portal-api",
+      "severity": "critical",
+      "value": "0/2 ready",
+      "summary": "PodNotReady on portal-api"
+    },
+    {
+      "id": "ALR-9021",
+      "fired_at": "2026-11-09T09:01:39+05:30",
+      "alertname": "HighLoad",
+      "instance": "srv-fin-app-02",
+      "severity": "warning",
+      "value": "0/2 ready",
+      "summary": "HighLoad on srv-fin-app-02"
+    },
+    {
+      "id": "ALR-9018",
+      "fired_at": "2026-11-09T09:01:45+05:30",
+      "alertname": "DiskSpaceLow",
+      "instance": "srv-fin-app-02",
+      "severity": "critical",
+      "value": "0/2 ready",
+      "summary": "DiskSpaceLow on srv-fin-app-02"
+    }
+  ]
+}

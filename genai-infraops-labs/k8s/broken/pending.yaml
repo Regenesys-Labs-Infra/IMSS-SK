@@ -1,0 +1,16 @@
+# Lab 5.2 - planted fault: resource request no node can satisfy
+apiVersion: apps/v1
+kind: Deployment
+metadata: {name: analytics-batch, namespace: portal, labels: {app: analytics-batch}}
+spec:
+  replicas: 1
+  selector: {matchLabels: {app: analytics-batch}}
+  template:
+    metadata: {labels: {app: analytics-batch}}
+    spec:
+      containers:
+      - name: batch
+        image: busybox:1.36
+        command: ["sh", "-c", "sleep 3600"]
+        resources:
+          requests: {cpu: "64", memory: 256Gi}

@@ -1,0 +1,1 @@
+{"network":{"cidr":"10.0.0.0/16","name":"network-f1mQkpEo"},"security_group":{"ingress_rules":[{"cidr_block":"10.0.0.0/8","port":443,"protocol":"tcp"}],"name":"sg-5QdH"},"vm":{"name":"vm-5QdH","os":"ubuntu-22.04","size":"medium"}}

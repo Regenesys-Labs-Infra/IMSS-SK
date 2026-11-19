@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Service Desk triage result (array, one item per ticket)",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["number", "summary", "category", "impact", "urgency", "priority",
+                 "assignment_group", "duplicate_of", "kb_match", "first_response",
+                 "confidence", "reason", "needs_human_review"],
+    "properties": {
+      "number": {"type": "string", "pattern": "^INC[0-9]{7}$"},
+      "summary": {"type": "string", "maxLength": 200},
+      "category": {"enum": ["VPN", "Password", "Account lockout", "Email", "Printer", "File share",
+                            "Performance", "Disk space", "Portal", "Access", "Monitoring", "Security", "Other"]},
+      "subcategory": {"type": ["string", "null"]},
+      "impact": {"enum": [1, 2, 3]},
+      "urgency": {"enum": [1, 2, 3]},
+      "priority": {"enum": ["P1", "P2", "P3", "P4"]},
+      "assignment_group": {"enum": ["SD-L1", "WINTEL-L2", "NETWORK-L2", "LINUX-L2", "APP-PORTAL-L2",
+                                    "K8S-PLATFORM-L3", "SECOPS", "EUC-L2"]},
+      "cmdb_ci": {"type": ["string", "null"]},
+      "duplicate_of": {"type": ["string", "null"], "pattern": "^INC[0-9]{7}$"},
+      "kb_match": {"type": ["string", "null"]},
+      "first_response": {"type": "string", "maxLength": 900},
+      "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+      "reason": {"type": "string", "maxLength": 240},
+      "needs_human_review": {"type": "boolean"}
+    }
+  }
+}

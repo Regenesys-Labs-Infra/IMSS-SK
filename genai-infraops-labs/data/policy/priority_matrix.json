@@ -1,0 +1,18 @@
+{
+  "description": "ITIL priority = f(impact, urgency). Impact: 1 High (many users / business service down), 2 Medium (department / degraded), 3 Low (single user). Urgency: 1 High (work stopped), 2 Medium (workaround exists), 3 Low.",
+  "matrix": {
+    "1-1": "P1",
+    "1-2": "P2",
+    "1-3": "P3",
+    "2-1": "P2",
+    "2-2": "P3",
+    "2-3": "P4",
+    "3-1": "P3",
+    "3-2": "P4",
+    "3-3": "P4"
+  },
+  "overrides": [
+    "VIP caller: raise by one level, minimum P3, always human review",
+    "Security suspicion: route SECOPS, always human review"
+  ]
+}

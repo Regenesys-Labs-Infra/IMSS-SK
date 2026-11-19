@@ -1,0 +1,19 @@
+2026-11-09T09:00:00+05:30 INFO pgbouncer pool=portal active=12/50 waiting=0
+2026-11-09T09:00:10+05:30 INFO pgbouncer pool=portal active=12/50 waiting=0
+2026-11-09T09:00:20+05:30 INFO pgbouncer pool=portal active=12/50 waiting=0
+2026-11-09T09:00:30+05:30 INFO pgbouncer pool=portal active=12/50 waiting=0
+2026-11-09T09:00:40+05:30 INFO pgbouncer pool=portal active=12/50 waiting=0
+2026-11-09T09:00:50+05:30 INFO pgbouncer pool=portal active=12/50 waiting=0
+2026-11-09T09:01:05+05:30 INFO pgbouncer pool=portal active=20/50 waiting=0
+2026-11-09T09:02:05+05:30 INFO pgbouncer pool=portal active=26/50 waiting=0
+2026-11-09T09:03:05+05:30 INFO pgbouncer pool=portal active=32/50 waiting=0
+2026-11-09T09:04:05+05:30 INFO pgbouncer pool=portal active=38/50 waiting=0
+2026-11-09T09:05:05+05:30 INFO pgbouncer pool=portal active=44/50 waiting=0
+2026-11-09T09:06:05+05:30 WARN pgbouncer pool=portal active=50/50 waiting=42
+2026-11-09T09:06:06+05:30 ERROR pgbouncer pool=portal no more connections allowed (max_client_conn)
+2026-11-09T09:07:05+05:30 WARN pgbouncer pool=portal active=50/50 waiting=42
+2026-11-09T09:07:06+05:30 ERROR pgbouncer pool=portal no more connections allowed (max_client_conn)
+2026-11-09T09:08:05+05:30 WARN pgbouncer pool=portal active=50/50 waiting=42
+2026-11-09T09:08:06+05:30 ERROR pgbouncer pool=portal no more connections allowed (max_client_conn)
+2026-11-09T09:09:05+05:30 WARN pgbouncer pool=portal active=50/50 waiting=42
+2026-11-09T09:09:06+05:30 ERROR pgbouncer pool=portal no more connections allowed (max_client_conn)
