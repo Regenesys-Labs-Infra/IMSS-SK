@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: web-content
+  namespace: demo
+  labels:
+    app: web
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html lang="en">
+    <head><title>Web app</title></head>
+    <body><h1>Welcome to the web app</h1></body>
+    </html>

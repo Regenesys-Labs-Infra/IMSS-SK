@@ -50,11 +50,12 @@ Participants generate production-grade manifests, diagnose broken workloads with
 
 **Steps**
 
-1. Make sure the cluster is running:
+1. Create the lab cluster (requires Docker and kind), then verify it and create the namespace:
 
    Terminal:
 
    ```bash
+   ./setup/create_cluster.sh
    kubectl get nodes
    kubectl create namespace demo
    ```
@@ -89,7 +90,7 @@ Participants generate production-grade manifests, diagnose broken workloads with
 
 **If something goes wrong**
 
-- kind cluster missing: run ./setup/create_cluster.sh.
+- Docker or kind missing: ask the lab administrator to prepare the VM with ./setup/setup_vm.sh, then run ./setup/create_cluster.sh.
 
 **Deliverable:** Running workload and manifests in the repository.
 
