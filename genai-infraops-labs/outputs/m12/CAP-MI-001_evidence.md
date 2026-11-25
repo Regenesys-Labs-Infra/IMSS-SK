@@ -6,6 +6,8 @@ The Customer Portal alert storm is consistent with several independent faults in
 
 The capstone alerts are dated 2026-11-12. The available detailed portal application log is dated 2026-11-09; it corroborates the same failure modes historically, but does not prove that those runtime conditions were present on Nov 12. No live Kubernetes or ITSM state was queried, and no infrastructure resources were changed.
 
+**Investigation scope:** This pack uses checked-in capstone fixtures reviewed under the `sd-investigator` read-only constraints. No MCP-backed ITSM calls or live Kubernetes queries were available; operational state remains unverified.
+
 ## Timeline (IST)
 
 - 14:00 — The [capstone brief](../../labs/m12/CAPSTONE_BRIEF.md) says release `2026.11.12` went live.
@@ -16,7 +18,7 @@ The capstone alerts are dated 2026-11-12. The available detailed portal applicat
 - 14:08:41 — Last Customer Portal alert in this parent (`CAPALR-017`).
 - 14:09 — Two `HighCPU` alerts on `srv-fin-app-02` are excluded; the CMDB maps that CI to Finance Reporting.
 
-## Evidence (read-only workspace tools + quoted lines)
+## Evidence (read-only repository artifacts + quoted lines)
 
 1. **Correlated alert set** — The [alert group record](./alert_groups.json) contains 18 child alerts for Customer Portal. The [source alert data](../../data/capstone/alerts.json) includes:
 
