@@ -8,6 +8,7 @@ from sanitise import sanitise
     [
         ("INDIAN_MOBILE", "Call +91 9876543210", "+91 9876543210"),
         ("INDIAN_MOBILE", "Call 9876543210", "9876543210"),
+        ("INDIAN_MOBILE", "Call +91-98765 43210", "+91-98765 43210"),
         ("EMPLOYEE_ID", "Owner HM-123456", "HM-123456"),
         ("AWS_ACCESS_KEY", "Key AKIA1234567890ABCDEF", "AKIA1234567890ABCDEF"),
         (
@@ -15,6 +16,7 @@ from sanitise import sanitise
             "aws_secret_access_key=abcdefghijklmnopqrstuvwxyz1234567890ABCD",
             "abcdefghijklmnopqrstuvwxyz1234567890ABCD",
         ),
+        ("AWS_SECRET", "key and secret " + "A" * 40, "A" * 40),
         ("BEARER_TOKEN", "Authorization: Bearer abc.def-123", "Bearer abc.def-123"),
         (
             "BEARER_TOKEN",

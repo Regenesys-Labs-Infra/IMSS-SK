@@ -12,12 +12,12 @@ import argparse, csv, json, os, re, sys
 PATTERNS = {
     "EMAIL": r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}",
     "IPV4": r"\b(?:\d{1,3}\.){3}\d{1,3}\b",
-    "INDIAN_MOBILE": r"(?<!\w)(?:\+91[\s-]?)?[6-9]\d{9}(?!\w)",
+    "INDIAN_MOBILE": r"(?<!\w)(?:\+91[\s-]?)?[6-9](?:[\s-]?\d){9}(?!\w)",
     "EMPLOYEE_ID": r"\bHM-\d{6}\b",
     "AWS_ACCESS_KEY": r"\b(?:AKIA|ASIA)[A-Z0-9]{16}\b",
     "AWS_SECRET": (
-        r"(?i)\b(?:aws[_ -]?)?secret(?:[_ -]?(?:access[_ -]?)?key)?\s*[:=]\s*"
-        r"(?:'[^']{40}'|\"[^\"]{40}\"|[A-Za-z0-9/+=]{40})"
+        r"(?i)\b(?:aws[_ -]?)?secret(?:[_ -]?(?:access[_ -]?)?key)?\s*"
+        r"(?:[:=]\s*|\s+)(?:'[^']{40}'|\"[^\"]{40}\"|\{[^}]{40}\}|[A-Za-z0-9/+=]{40})"
     ),
     "BEARER_TOKEN": (
         r"(?i)\bBearer\s+[A-Za-z0-9._~+/-]+=*|"
