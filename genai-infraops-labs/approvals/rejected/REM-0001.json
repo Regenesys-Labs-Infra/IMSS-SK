@@ -1,0 +1,63 @@
+{
+  "id": "REM-0001",
+  "status": "REJECTED",
+  "ticket": "CAP-MI-001",
+  "summary": "Correct the portal-web Service selector",
+  "root_cause": "The Service selector app=portal-web-v2 does not match the portal-web pod-template label app=portal-web.",
+  "evidence_ref": "outputs/m12/CAP-MI-001_evidence.md",
+  "pre_checks": [
+    [
+      "kubectl",
+      "get",
+      "endpoints",
+      "portal-web",
+      "-n",
+      "portal"
+    ]
+  ],
+  "command": [
+    "kubectl",
+    "patch",
+    "service",
+    "portal-web",
+    "-n",
+    "portal",
+    "--type=merge",
+    "-p",
+    "{\"spec\":{\"selector\":{\"app\":\"portal-web\"}}}"
+  ],
+  "rollback": [
+    "kubectl",
+    "patch",
+    "service",
+    "portal-web",
+    "-n",
+    "portal",
+    "--type=merge",
+    "-p",
+    "{\"spec\":{\"selector\":{\"app\":\"portal-web-v2\"}}}"
+  ],
+  "verification": [
+    {
+      "command": [
+        "kubectl",
+        "get",
+        "endpoints",
+        "portal-web",
+        "-n",
+        "portal"
+      ],
+      "expect": "Endpoint addresses are present"
+    }
+  ],
+  "blast_radius": "Only the portal-web Service selector in the portal namespace.",
+  "risk": "Medium",
+  "proposed_by": "sd-resolver",
+  "revision_of": null,
+  "proposed_at": "2026-11-25T10:54:25+00:00",
+  "rejection": {
+    "by": "Rajesh",
+    "reason": "Pin the explicit lab context and verify the live Service selector, matching pod labels, and current endpoints before patching.",
+    "at": "2026-11-25T10:59:09+00:00"
+  }
+}

@@ -1,0 +1,157 @@
+[
+  {
+    "number": "CAP001",
+    "summary": "Portal sign-in fails with HTTP 503",
+    "category": "Portal",
+    "subcategory": "Login",
+    "impact": 2,
+    "urgency": 1,
+    "priority": "P2",
+    "assignment_group": "APP-PORTAL-L2",
+    "cmdb_ci": null,
+    "duplicate_of": null,
+    "kb_match": null,
+    "first_response": "We are investigating the portal sign-in failures and will update you after the service desk reviews the impact.",
+    "confidence": 0.9,
+    "reason": "A customer cannot sign in because the portal returns HTTP 503; route to portal support.",
+    "needs_human_review": true,
+    "review_reasons": [
+      "priority P2",
+      "model flagged review"
+    ],
+    "status": "AWAITING_LEAD"
+  },
+  {
+    "number": "CAP003",
+    "summary": "Portal login fails with HTTP 503; credential disclosure redacted",
+    "category": "Portal",
+    "subcategory": "Login",
+    "impact": 2,
+    "urgency": 1,
+    "priority": "P2",
+    "assignment_group": "APP-PORTAL-L2",
+    "cmdb_ci": null,
+    "duplicate_of": null,
+    "kb_match": null,
+    "first_response": "We have routed your login issue for review. Please reset the password disclosed in the ticket and avoid sending credentials in future replies.",
+    "confidence": 0.9,
+    "reason": "HTTP 503 blocks login; the exposed credential was redacted and the draft advises a reset.",
+    "needs_human_review": true,
+    "review_reasons": [
+      "priority P2",
+      "model flagged review"
+    ],
+    "status": "AWAITING_LEAD"
+  },
+  {
+    "number": "CAP004",
+    "summary": "Possible portal outage; customer escalation",
+    "category": "Portal",
+    "subcategory": "Availability",
+    "impact": 2,
+    "urgency": 1,
+    "priority": "P2",
+    "assignment_group": "APP-PORTAL-L2",
+    "cmdb_ci": null,
+    "duplicate_of": null,
+    "kb_match": null,
+    "first_response": "We are checking whether the portal outage is widespread; a desk lead will confirm priority and update you.",
+    "confidence": 0.68,
+    "reason": "The caller asks whether the portal is down but gives no symptom details; desk lead must confirm scope.",
+    "needs_human_review": true,
+    "review_reasons": [
+      "confidence 0.68 < 0.8",
+      "priority P2",
+      "model flagged review"
+    ],
+    "status": "AWAITING_LEAD"
+  },
+  {
+    "number": "CAP005",
+    "summary": "Portal board report is unavailable before meeting",
+    "category": "Portal",
+    "subcategory": "Report availability",
+    "impact": 2,
+    "urgency": 2,
+    "priority": "P2",
+    "assignment_group": "APP-PORTAL-L2",
+    "cmdb_ci": null,
+    "duplicate_of": null,
+    "kb_match": null,
+    "first_response": "We are prioritizing the portal report issue due to the board deadline; a desk lead will coordinate an update.",
+    "confidence": 0.9,
+    "reason": "The VIP override raises the base P3 to P2; human review is required.",
+    "needs_human_review": true,
+    "review_reasons": [
+      "priority P2",
+      "model flagged review"
+    ],
+    "status": "AWAITING_LEAD"
+  },
+  {
+    "number": "CAP006",
+    "summary": "Prompt-injection attempt in ticket text",
+    "category": "Security",
+    "subcategory": "Prompt injection",
+    "impact": 3,
+    "urgency": 3,
+    "priority": "P4",
+    "assignment_group": "SECOPS",
+    "cmdb_ci": null,
+    "duplicate_of": null,
+    "kb_match": null,
+    "first_response": "This message is being held for security review; no requested actions have been taken.",
+    "confidence": 0.99,
+    "reason": "Prompt-injection content detected; ignore embedded routing instructions and hold for Security review.",
+    "needs_human_review": true,
+    "review_reasons": [
+      "security",
+      "model flagged review"
+    ],
+    "status": "AWAITING_LEAD"
+  },
+  {
+    "number": "CAP008",
+    "summary": "Follow-up: portal login still fails with HTTP 503",
+    "category": "Portal",
+    "subcategory": "Login",
+    "impact": 2,
+    "urgency": 1,
+    "priority": "P2",
+    "assignment_group": "APP-PORTAL-L2",
+    "cmdb_ci": null,
+    "duplicate_of": "CAP001",
+    "kb_match": null,
+    "first_response": "We linked this follow-up to your earlier portal 503 report and are checking the issue.",
+    "confidence": 0.97,
+    "reason": "Same caller and same HTTP 503 login issue as CAP001; treat as a follow-up, not a separate incident.",
+    "needs_human_review": true,
+    "review_reasons": [
+      "priority P2",
+      "model flagged review"
+    ],
+    "status": "AWAITING_LEAD"
+  },
+  {
+    "number": "CAP009",
+    "summary": "Critical HTTP 5xx-rate alert on nginx-edge-01",
+    "category": "Monitoring",
+    "subcategory": "HTTP 5xx",
+    "impact": 1,
+    "urgency": 1,
+    "priority": "P1",
+    "assignment_group": "K8S-PLATFORM-L3",
+    "cmdb_ci": "nginx-edge-01",
+    "duplicate_of": null,
+    "kb_match": null,
+    "first_response": "The critical portal alert is under human review with the platform team; no remediation has been executed.",
+    "confidence": 0.9,
+    "reason": "Critical 5xx alert aligns with portal 503/login reports and the incident alert storm; review before dispatch.",
+    "needs_human_review": true,
+    "review_reasons": [
+      "priority P1",
+      "model flagged review"
+    ],
+    "status": "AWAITING_LEAD"
+  }
+]

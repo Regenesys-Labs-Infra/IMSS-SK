@@ -6,7 +6,7 @@
   "required": ["ticket", "summary", "root_cause", "pre_checks", "command", "rollback",
                "verification", "blast_radius", "risk", "proposed_by"],
   "properties": {
-    "ticket": {"type": "string", "pattern": "^INC[0-9]{7}$|^INC-MAJ-[0-9]{4}$"},
+    "ticket": {"type": "string", "pattern": "^(?:INC[0-9]{7}|INC-MAJ-[0-9]{4}|CAP-MI-[0-9]{3})$"},
     "summary": {"type": "string", "maxLength": 200},
     "root_cause": {"type": "string", "maxLength": 400},
     "evidence_ref": {"type": "string"},

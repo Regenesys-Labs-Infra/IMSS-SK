@@ -2,3 +2,8 @@
 2026-11-19T10:04:12+00:00	sachinsk	nginx	restart-failed
 2026-11-19T10:06:08+00:00	sachinsk	nginx	dry-run
 2026-11-19T10:06:08+00:00	sachinsk	nginx	restart-failed
+{"time":"2026-11-25T10:54:25+00:00","event":"PROPOSED","plan":"REM-0001","by":"sd-resolver"}
+{"time": "2026-11-25T10:59:09+00:00", "event": "REJECTED", "plan": "REM-0001", "os_user": "sachinsk", "by": "Rajesh", "reason": "Pin the explicit lab context and verify the live Service selector, matching pod labels, and current endpoints before patching."}
+{"time":"2026-11-25T10:59:30+00:00","event":"PROPOSED","plan":"REM-0002","by":"sd-resolver","revision_of":"REM-0001"}
+{"time": "2026-11-25T11:02:28+00:00", "event": "APPROVED", "plan": "REM-0002", "os_user": "sachinsk", "by": "Rajesh", "note": "Approved for the isolated lab context Final Assignment; selector-only change with explicit context and rollback."}
+{"time": "2026-11-25T11:02:33+00:00", "event": "PRECHECK_FAILED", "plan": "REM-0002", "os_user": "sachinsk", "command": ["kubectl", "get", "service", "portal-web", "-n", "portal", "--context", "Final Assignment", "-o", "jsonpath={.spec.selector.app}"], "rc": 127, "output": "[Errno 2] No such file or directory: 'kubectl'"}

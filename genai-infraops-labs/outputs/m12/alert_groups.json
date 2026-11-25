@@ -1,0 +1,54 @@
+{
+  "total_alerts": 20,
+  "groups": [
+    {
+      "group_id": "CAP-MI-001",
+      "business_service": "Customer Portal",
+      "root_candidate": "Portal API rollout or image-pull failure causing pod readiness and login degradation, followed by edge HTTP 5xx; unverified hypothesis.",
+      "child_alert_ids": [
+        "CAPALR-000",
+        "CAPALR-001",
+        "CAPALR-002",
+        "CAPALR-003",
+        "CAPALR-004",
+        "CAPALR-005",
+        "CAPALR-006",
+        "CAPALR-007",
+        "CAPALR-008",
+        "CAPALR-009",
+        "CAPALR-010",
+        "CAPALR-011",
+        "CAPALR-012",
+        "CAPALR-013",
+        "CAPALR-014",
+        "CAPALR-015",
+        "CAPALR-016",
+        "CAPALR-017"
+      ],
+      "count": 18,
+      "window_start": "2026-11-12T14:03:00+05:30",
+      "window_end": "2026-11-12T14:08:41+05:30",
+      "correlation_window": "5-minute rolling inactivity window; no gap between same-service alerts exceeds 39 seconds.",
+      "priority": "P1",
+      "severity": "critical",
+      "primary_owner_group": "APP-PORTAL-L2",
+      "support_groups": [
+        "K8S-PLATFORM-L3",
+        "LINUX-L2"
+      ],
+      "status": "PROPOSED_PENDING_NOC_APPROVAL"
+    }
+  ],
+  "unassigned_alerts": [
+    {
+      "id": "CAPALR-018",
+      "business_service": "Finance Reporting",
+      "reason": "CI srv-fin-app-02 maps to a different business service; do not correlate with the Customer Portal incident."
+    },
+    {
+      "id": "CAPALR-019",
+      "business_service": "Finance Reporting",
+      "reason": "CI srv-fin-app-02 maps to a different business service; do not correlate with the Customer Portal incident."
+    }
+  ]
+}
