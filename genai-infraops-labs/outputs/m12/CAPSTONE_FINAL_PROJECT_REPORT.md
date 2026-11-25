@@ -4,7 +4,7 @@
 **Incident:** CAP-MI-001 - Customer Portal
 **Team branch:** `team/team-sachin`
 **Report date:** 2026-11-25
-**Delivery status:** Pull request #2 is open. The operational change is not applied; the incident root cause and recovery are not confirmed.
+**Delivery status:** The core capstone workflow was merged in pull request #2; this report is a follow-on deliverable. The operational change is not applied, and the incident root cause and recovery are not confirmed.
 
 ## Executive summary
 
