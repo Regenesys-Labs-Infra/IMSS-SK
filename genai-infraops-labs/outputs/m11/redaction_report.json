@@ -1,0 +1,75 @@
+[
+  {
+    "ticket": "INC0010301",
+    "masked": [
+      "PASSWORD_PHRASE"
+    ],
+    "injection_suspect": false
+  },
+  {
+    "ticket": "INC0010302",
+    "masked": [
+      "EMAIL",
+      "IPV4",
+      "EMPLOYEE_ID"
+    ],
+    "injection_suspect": false
+  },
+  {
+    "ticket": "INC0010303",
+    "masked": [
+      "AWS_ACCESS_KEY"
+    ],
+    "injection_suspect": false
+  },
+  {
+    "ticket": "INC0010304",
+    "masked": [
+      "BEARER_TOKEN"
+    ],
+    "injection_suspect": false
+  },
+  {
+    "ticket": "INC0010305",
+    "masked": [
+      "INDIAN_MOBILE",
+      "UNC_PATH",
+      "PASSWORD_PHRASE"
+    ],
+    "injection_suspect": false
+  },
+  {
+    "ticket": "INC0010306",
+    "masked": [
+      "EMAIL",
+      "IPV4",
+      "EMPLOYEE_ID"
+    ],
+    "injection_suspect": false
+  },
+  {
+    "ticket": "INC0010247",
+    "masked": [],
+    "injection_suspect": true
+  },
+  {
+    "ticket": "INC0010307",
+    "masked": [
+      "IPV4",
+      "CONNECTION_STRING_PASSWORD"
+    ],
+    "injection_suspect": false
+  },
+  {
+    "ticket": "INC0010308",
+    "masked": [],
+    "injection_suspect": false
+  },
+  {
+    "ticket": "INC0010309",
+    "masked": [
+      "EMAIL"
+    ],
+    "injection_suspect": false
+  }
+]
