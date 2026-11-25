@@ -2,6 +2,7 @@
   {
     "ticket": "INC0010301",
     "masked": [
+      "INDIAN_MOBILE",
       "PASSWORD_PHRASE"
     ],
     "injection_suspect": false
@@ -18,7 +19,8 @@
   {
     "ticket": "INC0010303",
     "masked": [
-      "AWS_ACCESS_KEY"
+      "AWS_ACCESS_KEY",
+      "AWS_SECRET"
     ],
     "injection_suspect": false
   },
@@ -68,7 +70,8 @@
   {
     "ticket": "INC0010309",
     "masked": [
-      "EMAIL"
+      "EMAIL",
+      "INDIAN_MOBILE"
     ],
     "injection_suspect": false
   }
