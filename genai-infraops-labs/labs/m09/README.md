@@ -109,6 +109,9 @@ Participants design and run supervised agents in VS Code: a read-only Investigat
    python3 tools/approve.py show REM-0001
    ```
 
+   Every Kubernetes command in a plan must specify an explicit `--context` and the allowed namespace. If a
+   read-only pre-check fails, execution stops and the plan is invalidated; a fresh proposal and approval are required.
+
 3. Reject the first plan with a reason (this is a required step):
 
    Terminal:

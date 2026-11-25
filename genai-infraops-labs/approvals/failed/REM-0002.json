@@ -1,0 +1,125 @@
+{
+  "id": "REM-0002",
+  "status": "PRECHECK_FAILED",
+  "ticket": "CAP-MI-001",
+  "summary": "Correct the portal-web Service selector",
+  "root_cause": "The Service selector app=portal-web-v2 does not match the portal-web pod-template label app=portal-web.",
+  "evidence_ref": "outputs/m12/CAP-MI-001_evidence.md",
+  "pre_checks": [
+    [
+      "kubectl",
+      "get",
+      "service",
+      "portal-web",
+      "-n",
+      "portal",
+      "--context",
+      "Final Assignment",
+      "-o",
+      "jsonpath={.spec.selector.app}"
+    ],
+    [
+      "kubectl",
+      "get",
+      "deployment",
+      "portal-web",
+      "-n",
+      "portal",
+      "--context",
+      "Final Assignment",
+      "-o",
+      "jsonpath={.spec.template.metadata.labels.app}"
+    ],
+    [
+      "kubectl",
+      "get",
+      "endpoints",
+      "portal-web",
+      "-n",
+      "portal",
+      "--context",
+      "Final Assignment"
+    ]
+  ],
+  "command": [
+    "kubectl",
+    "patch",
+    "service",
+    "portal-web",
+    "-n",
+    "portal",
+    "--context",
+    "Final Assignment",
+    "--type=merge",
+    "-p",
+    "{\"spec\":{\"selector\":{\"app\":\"portal-web\"}}}"
+  ],
+  "rollback": [
+    "kubectl",
+    "patch",
+    "service",
+    "portal-web",
+    "-n",
+    "portal",
+    "--context",
+    "Final Assignment",
+    "--type=merge",
+    "-p",
+    "{\"spec\":{\"selector\":{\"app\":\"portal-web-v2\"}}}"
+  ],
+  "verification": [
+    {
+      "command": [
+        "kubectl",
+        "get",
+        "service",
+        "portal-web",
+        "-n",
+        "portal",
+        "--context",
+        "Final Assignment",
+        "-o",
+        "jsonpath={.spec.selector.app}"
+      ],
+      "expect": "Selector value is app=portal-web"
+    },
+    {
+      "command": [
+        "kubectl",
+        "get",
+        "endpoints",
+        "portal-web",
+        "-n",
+        "portal",
+        "--context",
+        "Final Assignment"
+      ],
+      "expect": "Endpoint addresses match ready portal-web pods"
+    }
+  ],
+  "blast_radius": "Only the portal-web Service selector in the portal namespace; no Deployment, image, or Ingress changes.",
+  "risk": "Medium",
+  "proposed_by": "sd-resolver",
+  "revision_of": "REM-0001",
+  "proposed_at": "2026-11-25T10:59:30+00:00",
+  "approved_by": "Rajesh",
+  "approved_at": "2026-11-25T11:02:28+00:00",
+  "approval_note": "Approved for the isolated lab context Final Assignment; selector-only change with explicit context and rollback.",
+  "precheck_failure": {
+    "command": [
+      "kubectl",
+      "get",
+      "service",
+      "portal-web",
+      "-n",
+      "portal",
+      "--context",
+      "Final Assignment",
+      "-o",
+      "jsonpath={.spec.selector.app}"
+    ],
+    "rc": 127,
+    "output": "[Errno 2] No such file or directory: 'kubectl'"
+  },
+  "precheck_failed_at": "2026-11-25T11:02:33+00:00"
+}

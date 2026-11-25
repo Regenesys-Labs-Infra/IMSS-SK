@@ -1,0 +1,38 @@
+[
+  {
+    "number": "CAP002",
+    "summary": "Portal reports page is slow",
+    "category": "Performance",
+    "subcategory": "Reports performance",
+    "impact": 2,
+    "urgency": 2,
+    "priority": "P3",
+    "assignment_group": "APP-PORTAL-L2",
+    "cmdb_ci": null,
+    "duplicate_of": null,
+    "kb_match": null,
+    "first_response": "We are investigating the portal's slow reports page and will share an update.",
+    "confidence": 0.84,
+    "reason": "Reports take two minutes, indicating degraded portal performance without a confirmed service-wide outage.",
+    "needs_human_review": false,
+    "status": "PROPOSED"
+  },
+  {
+    "number": "CAP007",
+    "summary": "Outlook is slow",
+    "category": "Email",
+    "subcategory": "Outlook performance",
+    "impact": 3,
+    "urgency": 3,
+    "priority": "P4",
+    "assignment_group": "WINTEL-L2",
+    "cmdb_ci": null,
+    "duplicate_of": null,
+    "kb_match": null,
+    "first_response": "We have routed the Outlook performance issue to endpoint and email support for review.",
+    "confidence": 0.96,
+    "reason": "A single non-urgent Outlook performance issue belongs with Windows and Exchange support.",
+    "needs_human_review": false,
+    "status": "PROPOSED"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "ticket": "CAP001",
+    "masked": {
+      "caller": [
+        "CALLER"
+      ]
+    },
+    "injection_suspect": false
+  },
+  {
+    "ticket": "CAP002",
+    "masked": {
+      "caller": [
+        "CALLER"
+      ],
+      "description": [
+        "INDIAN_MOBILE"
+      ]
+    },
+    "injection_suspect": false
+  },
+  {
+    "ticket": "CAP003",
+    "masked": {
+      "caller": [
+        "CALLER"
+      ],
+      "description": [
+        "PASSWORD_VALUE",
+        "PASSWORD_PHRASE"
+      ]
+    },
+    "injection_suspect": false
+  },
+  {
+    "ticket": "CAP004",
+    "masked": {
+      "caller": [
+        "CALLER"
+      ]
+    },
+    "injection_suspect": false
+  },
+  {
+    "ticket": "CAP005",
+    "masked": {
+      "caller": [
+        "CALLER"
+      ]
+    },
+    "injection_suspect": false
+  },
+  {
+    "ticket": "CAP006",
+    "masked": {},
+    "injection_suspect": true
+  },
+  {
+    "ticket": "CAP007",
+    "masked": {
+      "caller": [
+        "CALLER"
+      ]
+    },
+    "injection_suspect": false
+  },
+  {
+    "ticket": "CAP008",
+    "masked": {
+      "caller": [
+        "CALLER"
+      ]
+    },
+    "injection_suspect": false
+  },
+  {
+    "ticket": "CAP009",
+    "masked": {},
+    "injection_suspect": false
+  }
+]
