@@ -4,16 +4,30 @@
 Usage:
   python tools/sanitise.py data/tickets/raw_tickets_pii.csv [--column description] [--out outputs/m11/] [--report]
 
-The baseline PATTERNS deliberately miss some categories (Indian mobile numbers, employee IDs,
-cloud keys, bearer tokens, UNC paths). Lab task: extend PATTERNS with Copilot inline chat and add tests.
+PATTERNS covers common PII and credential formats; review the report because no regex set catches
+every sensitive value. Lab task: extend PATTERNS with Copilot inline chat and add tests.
 """
 import argparse, csv, json, os, re, sys
 
 PATTERNS = {
     "EMAIL": r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}",
     "IPV4": r"\b(?:\d{1,3}\.){3}\d{1,3}\b",
+    "INDIAN_MOBILE": r"(?<!\w)(?:\+91[\s-]?)?[6-9]\d{9}(?!\w)",
+    "EMPLOYEE_ID": r"\bHM-\d{6}\b",
+    "AWS_ACCESS_KEY": r"\b(?:AKIA|ASIA)[A-Z0-9]{16}\b",
+    "AWS_SECRET": (
+        r"(?i)\b(?:aws[_ -]?)?secret(?:[_ -]?(?:access[_ -]?)?key)?\s*[:=]\s*"
+        r"(?:'[^']{40}'|\"[^\"]{40}\"|[A-Za-z0-9/+=]{40})"
+    ),
+    "BEARER_TOKEN": (
+        r"(?i)\bBearer\s+[A-Za-z0-9._~+/-]+=*|"
+        r"\beyJ[A-Za-z0-9_-]*\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\b"
+    ),
+    "UNC_PATH": r"\\\\[^\\/\s]+\\[^\\/\r\n,;\"']+(?:\\[^\r\n,;\"']*)?",
+    "CONNECTION_STRING_PASSWORD": (
+        r"(?i)\b(?:password|pwd)\s*=\s*(?:'[^']*'|\"[^\"]*\"|\{[^}]*\}|[^;\s]+)"
+    ),
     "PASSWORD_PHRASE": r"(?i)(?:password|pwd|passwd)\s*(?:is|:|=)\s*\S+",
-    # TODO (lab): INDIAN_MOBILE, EMPLOYEE_ID (HM-######), AWS_ACCESS_KEY, AWS_SECRET, BEARER_TOKEN, UNC_PATH
 }
 
 INJECTION_HINTS = [
